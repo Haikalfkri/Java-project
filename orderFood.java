@@ -24,9 +24,9 @@ public class orderFood {
         boolean order = true;
 
         System.out.println("""
-                    1. ikan bakar 26.000
-                    2. ikan cabe hitam 23.000
-                    3. chicken 20.000  
+                    1. Hot Dog 2
+                    2. BBQ 15
+                    3. KFC 10  
                 """);
         
         while (order) {
@@ -37,13 +37,13 @@ public class orderFood {
             int amount = scanner.nextInt();
 
             if (menu == 1) {
-                result = amount * 26000;
+                result = amount * 2;
                 listMenu.add(result);
             } else if (menu == 2) {
-                result = amount * 23000;
+                result = amount * 15;
                 listMenu.add(result);
             } else if (menu == 3) {
-                result = amount * 20000;
+                result = amount * 10;
                 listMenu.add(result);
             } else {
                 System.out.println("Failed to order. Please try again!");
@@ -62,7 +62,7 @@ public class orderFood {
             TotalAmount price = new TotalAmount();
             double totalPrice = price.total(listMenu);
 
-            System.out.println("Your total amount is " + totalPrice);
+            System.out.println("Your total amount is $" + totalPrice);
 
         }
     }
