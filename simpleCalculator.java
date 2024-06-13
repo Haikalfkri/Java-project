@@ -55,6 +55,7 @@ public class simpleCalculator {
                 break;
             }
         }
+        scanner.close();
 
     }
 }

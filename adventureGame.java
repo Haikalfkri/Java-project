@@ -51,9 +51,9 @@ public class adventureGame {
                 System.out.println("Invalid answer. Try again!");
                 continue;
             }
+            scanner.close();
         }
 
         System.out.println("Thanks for playing the game!");
-
     }
 }
