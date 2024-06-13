@@ -63,7 +63,7 @@ public class orderFood {
             double totalPrice = price.total(listMenu);
 
             System.out.println("Your total amount is $" + totalPrice);
-
         }
+        scanner.close();
     }
 }
